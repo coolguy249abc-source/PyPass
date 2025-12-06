@@ -1,0 +1,19 @@
+[project]
+name = "PyPass"
+version = "1.0"
+authors = [
+  { name="Xorg", email="coolguy249abc@gmail.com" },
+]
+description = "A password generator"
+readme = "README.md"
+requires-python = ">=3.14.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/coolguy249abc-source/PyPass"
+Issues = "https://github.com/coolguy249abc-source/PyPass/issues"
