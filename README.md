@@ -1,54 +1,19 @@
-################################################################
-MM"""""""`YM          MM"""""""`YM                            
-MM  mmmmm  M          MM  mmmmm  M                            
-M'        .M dP    dP M'        .M .d8888b. .d8888b. .d8888b. 
-MM  MMMMMMMM 88    88 MM  MMMMMMMM 88'  `88 Y8ooooo. Y8ooooo. 
-MM  MMMMMMMM 88.  .88 MM  MMMMMMMM 88.  .88       88       88 
-MM  MMMMMMMM `8888P88 MM  MMMMMMMM `88888P8 `88888P' `88888P' 
-MMMMMMMMMMMM      .88 MMMMMMMMMMMM                            
-              d8888P                                          
-################################################################
+# PyPass
+This is a Python module I made for generating passwords! It's my first ever python module.
 
-Welcome to PyPass! 
-
-This is my first ever Python module!
-
-    _        _   _   _     _     _                    _                       _                        
-    / \      | | (_) | |_  | |_  | |   ___      __ _  | |__     ___    _   _  | |_     _ __ ___     ___ 
-   / _ \     | | | | | __| | __| | |  / _ \    / _` | | '_ \   / _ \  | | | | | __|   | '_ ` _ \   / _ \
-  / ___ \    | | | | | |_  | |_  | | |  __/   | (_| | | |_) | | (_) | | |_| | | |_    | | | | | | |  __/
- /_/   \_\   |_| |_|  \__|  \__| |_|  \___|    \__,_| |_.__/   \___/   \__,_|  \__|   |_| |_| |_|  \___|
- -------------------------------------------------------------------------------------------------------
-
-My name is Xorg and I am a beginner Python developer. I am currently also making games with Unity and learning C++.
-
- ____                                      _                         _              
- |  _ \    ___   _ __     ___   _ __     __| |   ___   _ __     ___  (_)   ___   ___ 
- | | | |  / _ \ | '_ \   / _ \ | '_ \   / _` |  / _ \ | '_ \   / __| | |  / _ \ / __|
- | |_| | |  __/ | |_) | |  __/ | | | | | (_| | |  __/ | | | | | (__  | | |  __/ \__ \
- |____/   \___| | .__/   \___| |_| |_|  \__,_|  \___| |_| |_|  \___| |_|  \___| |___/
-                |_|                                                                  
---------------------------------------------------------------------------------------
-
-You need to install:
-
-random
-
-To install random run:
-
-pip install random
-
-     _      _                       _       _     _                                         _                 _   
-    / \    | |__     ___    _   _  | |_    | |_  | |__     ___     _ __    _ __    ___     (_)   ___    ___  | |_ 
-   / _ \   | '_ \   / _ \  | | | | | __|   | __| | '_ \   / _ \   | '_ \  | '__|  / _ \    | |  / _ \  / __| | __|
-  / ___ \  | |_) | | (_) | | |_| | | |_    | |_  | | | | |  __/   | |_) | | |    | (_) |   | | |  __/ | (__  | |_ 
- /_/   \_\ |_.__/   \___/   \__,_|  \__|    \__| |_| |_|  \___|   | .__/  |_|     \___/   _/ |  \___|  \___|  \__|
-                                                                  |_|                    |__/                     
-------------------------------------------------------------------------------------------------------------------
-
-This is a module to generate passwords.
-
-To learn it, read the PyPi tutorial.
-
-
-                                                                                                       
+## Dependencies
+Here are all the dependencies (dependency) you need to install:
+   random
+To install the dependencies run:
+   ```bash
+   pip install random
+   ```
+## Tutorial
+### Installing
+#### Using Python file
+To use PyPass with PyPass.py, you need to place the PyPass.py file in the same directory as your project Python file (eg, main.py).
+To include PyPass add:
+  ```python
+  import PyPass
+   ```
+at the top of your file.
