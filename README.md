@@ -361,6 +361,7 @@ def submit():
     if int(entry1_text) >= 4:
         if int(entry2_text) <= 25:
             all_passes = []
+            PyPass.setLength(int(entry1_text))
             
             for i in range(int(entry2_text)):
                 pw = PyPass.genNew(arr)
