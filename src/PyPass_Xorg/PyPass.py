@@ -13,10 +13,15 @@ def setLength(Thelength):
     length = Thelength
     return length
 
-def genNew(array):
+def genNewPrint(array):
             password_list = random.choices(array, k=length)
             password = "".join(password_list)
             print(password)
+
+def genNew(array):
+            password_list = random.choices(array, k=length)
+            password = "".join(password_list)
+            return password
             
 def getLength():
     return length
