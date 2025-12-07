@@ -45,6 +45,7 @@ Then, the input should be similar to:
     1.0.1
     ```
 #### Generating a password
+##### Character Sets & Arrays
 To generate a password you first need to make an array of characters. Here is a list of available character sets:
 * ``` PyPass.lowercase: a, b, c, d, ..., z ```
 * ``` PyPass.uppercase: A, B, C, D, ..., Z ```
@@ -59,3 +60,58 @@ To use multiple character sets in an array, add a + in between each one:
    ```python
    arr = PyPass.lowercase + PyPass.uppercase + PyPass.digits
    ```
+##### ```genNew()``` function
+To generate a password, use the ```genNew()``` function. To use the ```genNew()``` function, call it and put the array you made into the argument parentesis.
+   ```python
+   PyPass.genNew(arr)
+   ```
+The ```genNew()``` function already prints out the password for you, so you dont have to worry about using ```print()```. Here is the ouput of the code:
+   ```python
+   JuqqtXxi
+   ```
+To put it in a loop use the ```for``` loop.
+   ```python
+   for i in range(12):
+       PyPass.genNew(arr)
+   ```
+output:
+   ```python
+     MxxrfJVe
+     PbJCwgVI
+     CvpOncKS
+     NcTTMKWi
+     cIRLWTjF
+     RAGkjMWb
+     nHJWofzF
+     eZcJXJPP
+     fEJdHNlF
+     RDsKGgjj
+     PuWAlTzw
+     LjzBHloi
+   ```
+You can also use input to generate passwords. For example, the user might want to generate 10 passwords. to do that add an input variable:
+  ```python
+     from PyKeyGen_Xorg import PyGenKey
+
+     inp = int(input("Enter how many passwords you would like to generate: ")) # Make sure its is an integer
+     arr = PyGenKey.lowercase + PyGenKey.uppercase + PyGenKey.digits
+
+     if inp <= 100: # Sets a limit of 100
+         for i in range(inp):
+             PyGenKey.genNew(arr)
+     else:
+         print("Too much passwords.")
+  ```
+output:
+  ```bash
+  Enter how many passwords you would like to generate: 4
+  tJE9nfs0
+  nHNCJseP
+  gqJItmZk
+  EJmZnUX0
+  ```
+error:
+  ```bash
+  Enter how many passwords you would like to generate: 101
+  Too much passwords.
+  ```
