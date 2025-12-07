@@ -1,7 +1,7 @@
 # PyPass
 This is a Python module I made for generating passwords! It's my first ever python module.
 
-** POST NOTE: SOME DUDE ALREADY HAS THE NAME "PYPASS" SO IM RENAMING THE PYPI PAGE TO "PYGENKEY" **
+** POST NOTE: SOME DUDE ALREADY HAS THE NAME "PYPASS" SO IM RENAMING THE PYPI PAGE TO "PYKEYGEN" **
 
 ## Dependencies
 Here are all the dependencies (dependency) you need to install:
