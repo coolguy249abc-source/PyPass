@@ -2,6 +2,7 @@
 This is a Python module I made for generating passwords! It's my first ever python module.
 
 TestPyPi page: [link](https://test.pypi.org/project/PyKeyGen/)
+Github page: [link](https://github.com/coolguy249abc-source/PyPass/)
 
 ** POST NOTE: SOME DUDE ALREADY HAS THE NAME "PYPASS" SO IM RENAMING THE PYPI PAGE TO "PYKEYGEN" **
 
@@ -333,5 +334,75 @@ print(PyPass.pickEmoji())
 output: ```🧩```
 #### Bonus
 ##### GUI app using tkinter
-Coming soon!
+```python
+from PyKeyGen_Xorg import PyGenKey as PyPass
+import tkinter as tk
+from tkinter.ttk import *
+
+root = tk.Tk()
+root.geometry("700x600")
+root.title("PyPass")
+
+arr = PyPass.PRESETS["mega"]
+
+def copy_text():
+    text = passText.cget("text")  # get label text
+    root.clipboard_clear()
+    root.clipboard_append(text)
+
+def submit():
+    entry1_text = entry1.get()
+    entry2_text = entry2.get()
+    
+    if int(entry1_text) >= 4:
+        if int(entry2_text) <= 25:
+            all_passes = []
+            
+            for i in range(int(entry2_text)):
+                pw = PyPass.genNew(arr)
+                all_passes.append(pw)
+                print(pw) # Debugging; you can remove if you want
+            passText.config(text="\n".join(all_passes)) # "'\n'.join(all_passes)" makes each password start on a new line
+
+def clear():
+    passText.config(text=" ")
+    entry1.delete(0, tk.END)
+    entry2.delete(0, tk.END)
+
+titleLabel = tk.Label(root, text="Welcome to PyPass!", font=("Helvetica", 34))
+titleLabel.pack(pady=20)
+
+# Frame 1 - Length
+frame1 = tk.Frame(root)
+frame1.pack()
+text1 = tk.Label(frame1, text="Length")
+text1.pack(side="left")
+entry1 = tk.Entry(frame1)
+entry1.pack(side="right")
+
+# Frame 2 - Amount
+frame2 = tk.Frame(root)
+frame2.pack()
+text2 = tk.Label(frame2, text="Amount")
+text2.pack(side="left")
+entry2 = tk.Entry(frame2)
+entry2.pack(side="right")
+
+buttonSubmit = tk.Button(root, text="Submit!", command=lambda:submit())
+buttonSubmit.pack(pady=5)
+
+passText = tk.Label(root)
+passText.pack()
+
+buttonClear = tk.Button(root, text="Clear All", command=lambda:clear())
+buttonClear.pack()
+
+buttonClear = tk.Button(root, text="Copy to clipboard", command=lambda:copy_text())
+buttonClear.pack(side="bottom", pady=25)
+
+buttonQuit = tk.Button(root, text="Quit", command=root.destroy)
+buttonQuit.pack(side="bottom", pady=15)
+
+root.mainloop()
+```
 
