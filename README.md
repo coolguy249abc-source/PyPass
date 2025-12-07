@@ -27,6 +27,10 @@ run this command in the terminal:
    ```bash
    pip install -i https://test.pypi.org/simple/ PyKeyGen
    ```
+Run this to update:
+  ```bash
+  pip install -i https://test.pypi.org/simple/ PyKeyGen --upgrade
+  ```
 then, use:
    ```python
    from PyKeyGen_Xorg import PyKeyGen as PyPass # "as PyPass" is optional, but if you decide not to do it, throught the tutorial when I use PyPass, use PyGenKey (eg, PyPass.__version__() -> PyGenKey.__version__())
