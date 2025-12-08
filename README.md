@@ -33,7 +33,7 @@ Run this to update:
   ```
 then, use:
    ```python
-   from PyKeyGen_Xorg import PyKeyGen as PyPass # "as PyPass" is optional, but if you decide not to do it, throught the tutorial when I use PyPass, use PyGenKey (eg, PyPass.__version__() -> PyGenKey.__version__())
+   from PyKeyGen_Xorg import PyGenKey as PyPass # "as PyPass" is optional, but if you decide not to do it, throught the tutorial when I use PyPass, use PyGenKey (eg, PyPass.__version__() -> PyGenKey.__version__())
    ```
 ### Using
 #### Get version
