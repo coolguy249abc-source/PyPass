@@ -411,3 +411,16 @@ buttonQuit.pack(side="bottom", pady=15)
 root.mainloop()
 ```
 
+##### Simple Matrix
+Just generate a bunch of big passwords infinitly, and make them green. As simple as that.
+```python
+# matrix.py
+from PyKeyGen_Xorg import PyGenKey as PyPass
+from colorama import *
+
+print(Fore.GREEN)
+
+while True:
+    PyPass.setLength(75)
+    PyPass.genNewPrint(PyPass.PRESETS["strong"])
+```
