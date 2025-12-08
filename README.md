@@ -6,13 +6,13 @@ Github page: [link](https://github.com/coolguy249abc-source/PyPass/)
 
 ** POST NOTE: SOME DUDE ALREADY HAS THE NAME "PYPASS" SO IM RENAMING THE PYPI PAGE TO "PYKEYGEN" **
 
-## Dependencies
+<!-- ## Dependencies
 Here are all the dependencies (dependency) you need to install:
    random
 To install the dependencies run:
    ```bash
    pip install random
-   ```
+   ``` -->
 ## Tutorial
 ### Installing
 #### Using Python file
