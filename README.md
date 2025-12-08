@@ -7,7 +7,7 @@ Github page: [link](https://github.com/coolguy249abc-source/PyPass/)
 ** POST NOTE: SOME DUDE ALREADY HAS THE NAME "PYPASS" SO IM RENAMING THE PYPI PAGE TO "PYKEYGEN" **
 
 ###### Notice
-When you see a ```re``` prefix followed by a number when you use the ```__version__()``` function, the ```re``` stands for readme, so the version just had a new readme file.
+When you see a ```00x``` prefix followed by a number (x) when you use the ```__version__()``` function, the ```00x``` stands for readme, so the version just had a new readme file.
 
 <!-- ## Dependencies
 Here are all the dependencies (dependency) you need to install:
