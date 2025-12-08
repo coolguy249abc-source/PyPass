@@ -6,7 +6,7 @@ lowercase = list(string.ascii_lowercase)
 uppercase = list(string.ascii_uppercase)
 punctuation = list(string.punctuation)
 digits = list(string.digits)
-current_version = 1.0
+current_version = "1.0.001"
 
 def setLength(Thelength):
     global length
